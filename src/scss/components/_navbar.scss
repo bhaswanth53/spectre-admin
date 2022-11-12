@@ -1,0 +1,23 @@
+.navbar {
+    background-color: $white;
+    height: 55px;
+    position: fixed;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 8%);
+
+    &.open {
+        width: calc(100% - 80px);
+    }
+
+    &.close {
+        width: 100%;
+    }
+
+    a {
+        color: $primary !important;
+        transition: 0.3s;
+
+        i {
+            margin-right: 3px;
+        }
+    }
+}

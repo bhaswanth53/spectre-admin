@@ -1,0 +1,76 @@
+@import url(https://fonts.googleapis.com/css2?family=Ubuntu&display=swap);
+@import url(//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url(//unpkg.com/spectre.css/dist/spectre.min.css);
+@import url(//unpkg.com/spectre.css/dist/spectre-exp.min.css);
+@import url(//unpkg.com/spectre.css/dist/spectre-icons.min.css);
+html, body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.navbar {
+  background-color: #FFFFFF;
+  height: 55px;
+  position: fixed;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+.navbar.open {
+  width: calc(100% - 80px);
+}
+.navbar.close {
+  width: 100%;
+}
+.navbar a {
+  color: #113A5D !important;
+  transition: 0.3s;
+}
+.navbar a i {
+  margin-right: 3px;
+}
+
+.leftbar {
+  width: 80px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #113A5D;
+}
+.leftbar .nav {
+  margin-top: 47px;
+}
+.leftbar .nav .nav-item {
+  text-align: center;
+}
+.leftbar .nav .nav-item.active {
+  background-color: #FFFFFF;
+}
+.leftbar .nav .nav-item.active a * {
+  color: var(--primary);
+}
+.leftbar .nav .nav-item a {
+  color: #FFFFFF;
+  font-size: 11px;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  transition: 0.3s;
+}
+.leftbar .nav .nav-item a:hover {
+  background-color: rgba(8, 1, 1, 0.3);
+}
+.leftbar .nav .nav-item a span {
+  display: block;
+  color: #FFFFFF;
+}
+.leftbar .nav .nav-item a i {
+  font-size: 30px;
+}
+
+.rightbar {
+  margin-left: 80px;
+}
+.rightbar .content {
+  background-color: #F9F9F9;
+  padding-top: 75px !important;
+  padding: 20px;
+}
