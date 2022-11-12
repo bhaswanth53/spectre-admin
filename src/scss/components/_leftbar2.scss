@@ -1,11 +1,17 @@
-.leftbar {
-    width: $leftbar1_width;
+.leftbar-2 {
+    width: $leftbar2_width;
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     background-color: $dark;
-    border-right: 1px solid white_rgba(0.1);
+    margin-left: $leftbar1_width;
+
+    .leftbar-content {
+        &:not(.show) {
+            display: none;
+        }
+    }
 
     .nav {
         margin-top: 47px;
@@ -25,23 +31,14 @@
 
             a {
                 color: $white;
-                font-size: 11px;
+                font-size: 17px;
                 display: block;
-                text-align: center;
                 padding: 10px;
                 transition: 0.3s;
+                text-align: left;
 
                 &:hover {
                     background-color: rgba(8, 1, 1, 0.3);
-                }
-
-                span {
-                    display: block;
-                    color: $white;
-                }
-
-                i {
-                    font-size: 25px;
                 }
             }
         }

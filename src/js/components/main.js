@@ -1,7 +1,14 @@
+import $ from 'jquery'
+
 class Main {
     init() {
+        this.handleMenu()
+        this.handleLeftBar()
+    }
+    handleMenu() {
         var navClose = document.querySelector('[navbar-close]')
         var leftBar = document.getElementById('left-bar')
+        var leftBar2 = document.getElementById('left-bar-2');
         var rightBar = document.getElementById('right-bar')
         var navbar = document.getElementById('navbar')
         var isNavOpen = true
@@ -11,7 +18,7 @@ class Main {
         })
 
         function closeNav() {
-            leftBar.style.display = 'none'
+            leftBar2.style.display = 'none'
             navbar.classList.remove('open')
             navbar.classList.add('close')
             rightBar.classList.remove('partial')
@@ -26,9 +33,22 @@ class Main {
             // rightBar.style.marginLeft = '50px'
             rightBar.classList.remove('full')
             rightBar.classList.add('partial')
-            leftBar.style.display = 'block'
+            leftBar2.style.display = 'block'
             isNavOpen = true
         }
+    }
+
+    handleLeftBar() {
+        $(document).on('click', '.leftbar-link', function(e) {
+            e.preventDefault()
+            var tab = $(this).attr('href')
+
+            $("#left-bar .nav-item.active").removeClass('active')
+            $(this).parent().addClass('active')
+
+            $("#left-bar-2 .leftbar-content.show").removeClass('show')
+            $(tab).addClass('show')
+        })
     }
 }
 

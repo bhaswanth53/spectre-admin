@@ -6,7 +6,8 @@
     }
 
     &.full {
-        margin-left: 0px;
+        // margin-left: 0px;
+        margin-left: $leftbar1_width;
     }
 
     .content {

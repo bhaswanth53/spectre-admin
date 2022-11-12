@@ -20,7 +20,7 @@ html, body {
   font-size: 15px !important;
 }
 .navbar a.bar-handle {
-  margin-left: 50px;
+  margin-left: 250px;
 }
 .navbar a i {
   margin-right: 3px;
@@ -33,6 +33,7 @@ html, body {
   bottom: 0;
   left: 0;
   background-color: #1c1b1b;
+  border-right: 1px solid rgba(214, 214, 214, 0.1);
 }
 .leftbar .nav {
   margin-top: 47px;
@@ -65,14 +66,50 @@ html, body {
   font-size: 25px;
 }
 
-.rightbar {
+.leftbar-2 {
+  width: 200px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #1c1b1b;
   margin-left: 50px;
+}
+.leftbar-2 .leftbar-content:not(.show) {
+  display: none;
+}
+.leftbar-2 .nav {
+  margin-top: 47px;
+}
+.leftbar-2 .nav .nav-item {
+  text-align: center;
+}
+.leftbar-2 .nav .nav-item.active a {
+  border-left: 2px solid #FF6188;
+}
+.leftbar-2 .nav .nav-item.active a * {
+  color: #FF6188;
+}
+.leftbar-2 .nav .nav-item a {
+  color: #d6d6d6;
+  font-size: 17px;
+  display: block;
+  padding: 10px;
+  transition: 0.3s;
+  text-align: left;
+}
+.leftbar-2 .nav .nav-item a:hover {
+  background-color: rgba(8, 1, 1, 0.3);
+}
+
+.rightbar {
+  margin-left: 250px;
 }
 .rightbar.partial {
-  margin-left: 50px;
+  margin-left: 250px;
 }
 .rightbar.full {
-  margin-left: 0px;
+  margin-left: 50px;
 }
 .rightbar .content {
   background-color: #2e2e2e;
