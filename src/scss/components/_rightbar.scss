@@ -1,9 +1,18 @@
 .rightbar {
-    margin-left: 80px;
+    margin-left: $leftbar_width;
+
+    &.partial {
+        margin-left: $leftbar_width;
+    }
+
+    &.full {
+        margin-left: 0px;
+    }
 
     .content {
-        background-color: $light;
+        background-color: $background;
         padding-top: calc(55px + 20px) !important;
         padding: 20px;
+        color: $white;
     }
 }

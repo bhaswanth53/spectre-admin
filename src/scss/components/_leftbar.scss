@@ -1,10 +1,10 @@
 .leftbar {
-    width: 80px;
+    width: $leftbar_width;
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
-    background-color: $primary;
+    background-color: $dark;
 
     .nav {
         margin-top: 47px;
@@ -13,12 +13,12 @@
             text-align: center;
 
             &.active {
-                background-color: $white;
 
                 a {
                     * {
-                        color: var(--primary);
+                        color: $first;
                     }
+                    border-left: 2px solid $first;
                 }
             }
 
@@ -40,7 +40,7 @@
                 }
 
                 i {
-                    font-size: 30px;
+                    font-size: 25px;
                 }
             }
         }

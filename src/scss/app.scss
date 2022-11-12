@@ -11,6 +11,9 @@
 
 @import './_partials/variables';
 
+// Theme
+@import './themes/monokai.scss';
+
 html, body {
     font-family: $ubuntu;
 }

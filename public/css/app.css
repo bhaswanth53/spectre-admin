@@ -8,32 +8,31 @@ html, body {
 }
 
 .navbar {
-  background-color: #FFFFFF;
-  height: 55px;
-  position: fixed;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-}
-.navbar.open {
-  width: calc(100% - 80px);
-}
-.navbar.close {
+  background-color: #FF6188;
+  height: 35px;
   width: 100%;
+  position: absolute;
+  z-index: 100;
 }
 .navbar a {
-  color: #113A5D !important;
+  color: white !important;
   transition: 0.3s;
+  font-size: 15px !important;
+}
+.navbar a.bar-handle {
+  margin-left: 50px;
 }
 .navbar a i {
   margin-right: 3px;
 }
 
 .leftbar {
-  width: 80px;
+  width: 50px;
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
-  background-color: #113A5D;
+  background-color: #1c1b1b;
 }
 .leftbar .nav {
   margin-top: 47px;
@@ -41,14 +40,14 @@ html, body {
 .leftbar .nav .nav-item {
   text-align: center;
 }
-.leftbar .nav .nav-item.active {
-  background-color: #FFFFFF;
+.leftbar .nav .nav-item.active a {
+  border-left: 2px solid #FF6188;
 }
 .leftbar .nav .nav-item.active a * {
-  color: var(--primary);
+  color: #FF6188;
 }
 .leftbar .nav .nav-item a {
-  color: #FFFFFF;
+  color: #d6d6d6;
   font-size: 11px;
   display: block;
   text-align: center;
@@ -60,17 +59,24 @@ html, body {
 }
 .leftbar .nav .nav-item a span {
   display: block;
-  color: #FFFFFF;
+  color: #d6d6d6;
 }
 .leftbar .nav .nav-item a i {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .rightbar {
-  margin-left: 80px;
+  margin-left: 50px;
+}
+.rightbar.partial {
+  margin-left: 50px;
+}
+.rightbar.full {
+  margin-left: 0px;
 }
 .rightbar .content {
-  background-color: #F9F9F9;
+  background-color: #2e2e2e;
   padding-top: 75px !important;
   padding: 20px;
+  color: #d6d6d6;
 }

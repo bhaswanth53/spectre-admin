@@ -1,34 +1,72 @@
 /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./src/js/app.js":
 /*!***********************!*\
   !*** ./src/js/app.js ***!
   \***********************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-var navClose = document.querySelector('[navbar-close]');
-var leftBar = document.getElementById('left-bar');
-var rightBar = document.getElementById('right-bar');
-var navbar = document.getElementById('navbar');
-var isNavOpen = true;
-navClose.addEventListener('click', function () {
-  isNavOpen ? closeNav() : openNav();
-});
-function closeNav() {
-  leftBar.style.display = 'none';
-  navbar.classList.remove('open');
-  navbar.classList.add('close');
-  rightBar.style.marginLeft = '0px';
-  isNavOpen = false;
-}
-function openNav() {
-  navbar.classList.remove('close');
-  navbar.classList.add('open');
-  rightBar.style.marginLeft = '80px';
-  leftBar.style.display = 'block';
-  isNavOpen = true;
-}
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _components_main__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/main */ "./src/js/components/main.js");
+
+var main = new _components_main__WEBPACK_IMPORTED_MODULE_0__["default"]();
+main.init();
+
+/***/ }),
+
+/***/ "./src/js/components/main.js":
+/*!***********************************!*\
+  !*** ./src/js/components/main.js ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+var Main = /*#__PURE__*/function () {
+  function Main() {
+    _classCallCheck(this, Main);
+  }
+  _createClass(Main, [{
+    key: "init",
+    value: function init() {
+      var navClose = document.querySelector('[navbar-close]');
+      var leftBar = document.getElementById('left-bar');
+      var rightBar = document.getElementById('right-bar');
+      var navbar = document.getElementById('navbar');
+      var isNavOpen = true;
+      navClose.addEventListener('click', function () {
+        isNavOpen ? closeNav() : openNav();
+      });
+      function closeNav() {
+        leftBar.style.display = 'none';
+        navbar.classList.remove('open');
+        navbar.classList.add('close');
+        rightBar.classList.remove('partial');
+        rightBar.classList.add('full');
+        // rightBar.style.marginLeft = '0px'
+        isNavOpen = false;
+      }
+      function openNav() {
+        navbar.classList.remove('close');
+        navbar.classList.add('open');
+        // rightBar.style.marginLeft = '50px'
+        rightBar.classList.remove('full');
+        rightBar.classList.add('partial');
+        leftBar.style.display = 'block';
+        isNavOpen = true;
+      }
+    }
+  }]);
+  return Main;
+}();
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Main);
 
 /***/ }),
 
@@ -38,7 +76,6 @@ function openNav() {
   \***************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
@@ -104,6 +141,18 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 				}
 /******/ 			}
 /******/ 			return result;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
 /******/ 		};
 /******/ 	})();
 /******/ 	

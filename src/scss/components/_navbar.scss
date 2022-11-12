@@ -1,20 +1,18 @@
 .navbar {
-    background-color: $white;
-    height: 55px;
-    position: fixed;
-    box-shadow: 0 2px 8px rgb(0 0 0 / 8%);
-
-    &.open {
-        width: calc(100% - 80px);
-    }
-
-    &.close {
-        width: 100%;
-    }
+    background-color: $first;
+    height: $navbar_height;
+    width: 100%;
+    position: absolute;
+    z-index: 100;
 
     a {
-        color: $primary !important;
+        color: white !important;
         transition: 0.3s;
+        font-size: 15px !important;
+
+        &.bar-handle {
+            margin-left: $leftbar_width;
+        }
 
         i {
             margin-right: 3px;

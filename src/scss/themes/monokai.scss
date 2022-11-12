@@ -1,0 +1,51 @@
+$first: #FF6188;
+$second: #A9DC76;
+$third: #FFD866;
+$fourth: #78DCE8;
+$fifth: #AB9DF2;
+$sixth: #e87d3e;
+$seventh: #6c99bb;
+
+$background: #2e2e2e;
+$white: #d6d6d6;
+$dark: #1c1b1b;
+
+@function first_rgba($value) {
+    @return rgba(255, 97, 136, $value);
+}
+
+@function second_rgba($value) {
+    @return rgba(169, 220, 118, $value);
+}
+
+@function third_rgba($value) {
+    @return rgba(255, 216, 102, $value);
+}
+
+@function fourth_rgba($value) {
+    @return rgba(120, 220, 232, $value);
+}
+
+@function fifth_rgba($value) {
+    @return rgba(171, 157, 242, $value);
+}
+
+@function background_rgba($value) {
+    @return rgba(46, 46, 46, $value);
+}
+
+@function white_rgba($value) {
+    @return rgba(214, 214, 214, $value);
+}
+
+@function sixth_rgba($value) {
+    @return rgba(232, 125, 62, $value);
+}
+
+@function seventh_rgba($value) {
+    @return rgba(108, 153, 187, $value);
+}
+
+@function dark_rgba($value) {
+    @return rgba(28, 27, 27, $value);
+}
