@@ -1,0 +1,28 @@
+{
+  "name": "spectre-admin",
+  "version": "1.0.0",
+  "description": "An admin panel UI designed with <a href=\"https://picturepan2.github.io/spectre/\">spectre.css</a>",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run development",
+      "development": "mix",
+      "watch": "mix watch",
+      "watch-poll": "mix watch -- --watch-options-poll=1000",
+      "hot": "mix watch --hot",
+      "prod": "npm run production",
+      "production": "mix --production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhaswanth53/spectre-admin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bhaswanth53/spectre-admin/issues"
+  },
+  "homepage": "https://github.com/bhaswanth53/spectre-admin#readme",
+  "devDependencies": {
+    "laravel-mix": "^6.0.49"
+  }
+}
